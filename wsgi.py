@@ -12,7 +12,27 @@ def application(environ, start_response):
         response_body = '\n'.join(response_body)
     else:
         ctype = 'text/html'
-        response_body = '''hello world'''
+        response_body = '''def symbol4(d):
+    s=[
+    '`````●`',
+    '````●●`',
+    '```●`●`',
+    '``●``●`',
+    '`●```●`',
+    '`●●●●●●',
+    '`````●`',
+    '`````●`',
+    '`````●`',
+    ]
+    return s[d]
+ 
+d=9
+symboldict={"4":symbol4}
+inp=input("輸入:")
+for i in range(d):
+    for c in inp:
+        print(symboldict[c](i),end='')
+    print()'''
 
     status = '200 OK'
     response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
