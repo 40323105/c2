@@ -13,7 +13,7 @@ def application(environ, start_response):
     else:
         ctype = 'text/html'
         response_body = '''def symbol4():
-    s='''
+    s=
     '`````●`',
     '````●●`',
     '```●`●`',
@@ -23,7 +23,7 @@ def application(environ, start_response):
     '`````●`',
     '`````●`',
     '`````●`',
-    '''
+    
     print(s)
 symbol4()
  
