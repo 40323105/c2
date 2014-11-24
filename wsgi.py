@@ -12,7 +12,7 @@ def application(environ, start_response):
         response_body = '\n'.join(response_body)
     else:
         ctype = 'text/html'
-        response_body = '''hi'''
+        response_body = '''yes'''
 
     status = '200 OK'
     response_headers = [('Content-Type', ctype), ('Content-Length', str(len(response_body)))]
